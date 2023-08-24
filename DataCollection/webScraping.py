@@ -7,10 +7,6 @@ URLs = ['https://venturebeat.com/tag/data-science/']
 
 articles = []
 
-def clean_paragraphs(paragraphs):
-    cleaned_paragraphs = [para.replace('\xa0', ' ').strip() for para in paragraphs if para.strip() != '']
-    return cleaned_paragraphs
-
 def fetchContent(link):
     """This function fetches the content from the given link
 
